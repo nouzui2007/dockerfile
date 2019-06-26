@@ -1,0 +1,7 @@
+FROM nouzui2007/django:basic
+
+ENV APP_PATH /opt/apps
+
+WORKDIR $APP_PATH
+
+RUN pip install --no-cache-dir djangorestframework django-filter djangorestframework-jwt
